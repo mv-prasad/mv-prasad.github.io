@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. V. Prasad | Software Development Courses | Philosophy</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        hr {
+            border: none;
+            margin-top: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 title="M. V. Prasad">M.</h1>
+        <p><a href="/">Home</a> / <a href="software-development-content.html">Software Development Content</a></p>
+    </header>
+    <main>
+        <img src="icon.png" width="64" height="64" id="icon">
+
+        <section>
+            <h2>HTML Beginner Course</h2>
+            <ol>
+                <li><a href="#css-introduction">CSS Introduction</a></li>
+                <li><a href="#css-syntax">CSS Syntax</a></li>
+                <li><a href="#css-integration-html-document">CSS Integration HTML Document</a></li>
+                <li><a href="#css-colors">CSS Colors</a></li>
+                <li><a href="#css-backgrounds">CSS Backgrounds</a></li>
+                <li><a href="#css-borders">CSS Borders</a></li>
+                <li><a href="#css-paddings">CSS Paddings</a></li>
+                <li><a href="#css-margins">CSS Margins</a></li>
+                <li><a href="#css-outline">CSS Outline</a></li>
+                <li><a href="#css-selectors">CSS Selectors</a></li>
+                <li><a href="#css-alignment">CSS Alignment (Text/Image/content)</a></li>
+                <li><a href="#css-width-and-height">CSS Width and Height</a></li>
+                <li><a href="#css-text-and-fonts">CSS Text and Fonts</a></li>
+                <li><a href="#css-links">CSS Links</a></li>
+                <li><a href="#css-buttons">CSS Buttons</a></li>
+                <li><a href="#css-flex-box">CSS Flex Box</a></li>
+                <li><a href="#css-forms">CSS Forms</a></li>
+                <li><a href="#css-lists">CSS Lists</a></li>
+                <li><a href="#css-media-queries">CSS Media Queries</a></li>
+            </ol>
+
+
+        </section>
+
+        <section>
+
+            <h3 id="css-introduction">CSS Introduction</h3>
+            <ul>
+                <li><strong>CSS (Cascading Style Sheets)</strong>: Used to style HTML elements.</li>
+                <li><strong>Purpose</strong>: Control layout, colors, fonts, and more.</li>
+                <li><strong>Syntax</strong>: Consists of selectors and declarations (property-value pairs).</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            selector {
+              property: value;
+            }
+            </code></pre>
+            <p><strong>Code Example</strong>:</p>
+            <pre><code>body {
+              background-color: lightblue;
+            }
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Create a CSS file to change the background color of an HTML page to light blue.</li>
+            </ul>
+            <hr>
+            <h3 id="css-syntax">CSS Syntax</h3>
+            <ul>
+                <li><strong>Selectors</strong>: Target HTML elements (e.g., element selectors, class selectors, ID
+                    selectors).</li>
+                <li><strong>Properties</strong>: Define the style (e.g., <code>color</code>, <code>font-size</code>).
+                </li>
+                <li><strong>Values</strong>: Specify the style settings (e.g., <code>red</code>, <code>16px</code>).
+                </li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>selector {
+              property: value;
+            }
+            </code></pre>
+            <p><strong>Code Example</strong>:</p>
+            <pre><code>h1 {
+              color: red;
+              font-size: 24px;
+            }
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Style all <code>&lt;h1&gt;</code> elements to have red text and a font size of 24 pixels.</li>
+            </ul>
+            <hr>
+            <h3 id="css-integration-html-document">CSS Integration HTML Document</h3>
+            <ul>
+                <li><strong>Inline CSS</strong>: Use <code>style</code> attribute directly in HTML tags.</li>
+                <li><strong>Internal CSS</strong>: Include CSS within the <code>&lt;style&gt;</code> tag in the HTML
+                    <code>&lt;head&gt;</code>.
+                </li>
+                <li><strong>External CSS</strong>: Link to an external CSS file using <code>&lt;link&gt;</code>.</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+              &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;h1&gt;This is a Heading&lt;/h1&gt;
+              &lt;p&gt;This is a paragraph.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+            </code></pre>
+            <p><strong>Code Example</strong>:</p>
+            <pre><code>/* styles.css */
+            h1 {
+              color: blue;
+            }
+            
+            p {
+              color: green;
+            }
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Create an HTML file linked to an external CSS file. Style the <code>&lt;h1&gt;</code> and
+                    <code>&lt;p&gt;</code> elements with different colors.
+                </li>
+            </ul>
+            <hr>
+            <h3 id="css-colors">CSS Colors</h3>
+            <ul>
+                <li><strong>Color Values</strong>: Use names, hex codes, RGB, RGBA, HSL, HSLA.</li>
+                <li><strong>Color Keywords</strong>: Basic color names (e.g., <code>red</code>, <code>blue</code>).</li>
+                <li><strong>Hex Codes</strong>: Represent colors as hexadecimal values (e.g., <code>#ff0000</code>).
+                </li>
+                <li><strong>RGB/RGBA</strong>: Define colors using RGB values (e.g., <code>rgb(255,0,0)</code>), with
+                    alpha for transparency (e.g., <code>rgba(255,0,0,0.5)</code>).</li>
+                <li><strong>HSL/HSLA</strong>: Define colors using hue, saturation, lightness, and alpha (e.g.,
+                    <code>hsl(0, 100%, 50%)</code>, <code>hsla(0, 100%, 50%, 0.5)</code>).
+                </li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>p {
+              color: #ff6347; /* Tomato */
+            }
+            
+            h2 {
+              color: rgb(0, 255, 0); /* Lime */
+            }
+            
+            div {
+              color: rgba(0, 0, 255, 0.5); /* Semi-transparent Blue */
+            }
+            
+            span {
+              color: hsl(120, 100%, 50%); /* Green */
+            }
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Apply different color values to text elements on your webpage using color names, hex codes, RGB, and
+                    HSL.</li>
+            </ul>
+            <hr>
+            <h3 id="css-backgrounds">CSS Backgrounds</h3>
+            <ul>
+                <li><strong>Background Color</strong>: Set the background color of elements
+                    (<code>background-color</code>).</li>
+                <li><strong>Background Image</strong>: Add images as backgrounds (<code>background-image</code>).</li>
+                <li><strong>Background Repeat</strong>: Control image repetition (<code>background-repeat</code>).</li>
+                <li><strong>Background Position</strong>: Position the background image
+                    (<code>background-position</code>).</li>
+                <li><strong>Background Size</strong>: Adjust the size of the background image
+                    (<code>background-size</code>).</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>div {
+              background-color: lightgray;
+              background-image: url(&#39;background.jpg&#39;);
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+            }
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Style a <code>div</code> with a background color and a background image. Adjust its repeat,
+                    position, and size properties.</li>
+            </ul>
+            <hr>
+            <h3 id="css-borders">CSS Borders</h3>
+            <ul>
+                <li><strong>Borders</strong>: Add borders to elements (<code>border</code>).</li>
+                <li><strong>Properties</strong>:<ul>
+                        <li><code>border-width</code>: Thickness of the border.</li>
+                        <li><code>border-style</code>: Style of the border (e.g., <code>solid</code>,
+                            <code>dashed</code>, <code>dotted</code>).
+                        </li>
+                        <li><code>border-color</code>: Color of the border.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>div {
+              border-width: 2px;
+              border-style: solid;
+              border-color: black;
+            }
+            </code></pre>
+            <p><strong>Code Example</strong>:</p>
+            <pre><code>p {
+              border: 1px solid red;
+            }
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Add a border to a <code>&lt;div&gt;</code> with different styles and colors, and experiment with
+                    border-width and border-color.</li>
+            </ul>
+            <hr>
+            <h3 id="css-paddings">CSS Paddings</h3>
+            <ul>
+                <li><strong>Padding</strong>: Space between the element&#39;s content and its border
+                    (<code>padding</code>).</li>
+                <li><strong>Properties</strong>: Set padding for all sides or individual sides
+                    (<code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>,
+                    <code>padding-left</code>).
+                </li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>div {
+              padding: 20px; /* All sides */
+              padding-top: 10px; /* Top side only */
+              padding-right: 15px; /* Right side only */
+            }
+            </code></pre>
+            <p><strong>Code Example</strong>:</p>
+            <pre><code>section {
+              padding: 15px;
+            }
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Add padding to a <code>&lt;section&gt;</code> element and adjust the padding values for different
+                    sides.</li>
+            </ul>
+            <hr>
+            <h3 id="css-margins">CSS Margins</h3>
+            <ul>
+                <li><strong>Margins</strong>: Space outside the border, between elements (<code>margin</code>).</li>
+                <li><strong>Properties</strong>: Set margin for all sides or individual sides (<code>margin-top</code>,
+                    <code>margin-right</code>, <code>margin-bottom</code>, <code>margin-left</code>).
+                </li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>div {
+              margin: 30px; /* All sides */
+              margin-bottom: 20px; /* Bottom side only */
+            }
+            </code></pre>
+            <p><strong>Code Example</strong>:</p>
+            <pre><code>article {
+              margin: 20px;
+            }
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Apply margins to an <code>&lt;article&gt;</code> element and experiment with different margin values
+                    for each side.</li>
+            </ul>
+            <hr>
+            <h3 id="css-outline">CSS Outline</h3>
+            <ul>
+                <li><strong>Outline</strong>: Draws a line around elements, outside the border (<code>outline</code>).
+                </li>
+                <li><strong>Properties</strong>:<ul>
+                        <li><code>outline-width</code>: Thickness of the outline.</li>
+                        <li><code>outline-style</code>: Style of the outline (e.g., <code>solid</code>,
+                            <code>dashed</code>).
+                        </li>
+                        <li><code>outline-color</code>: Color of the outline.</li>
+                        <li><code>outline-offset</code>: Space between the outline and the border.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>div {
+              outline-width: 3px;
+              outline-style: dotted;
+              outline-color: blue;
+              outline-offset: 5px;
+            }
+            </code></pre>
+            <p><strong>Code Example</strong>:</p>
+            <pre><code>input {
+              outline: 2px dashed green;
+            }
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Add an outline to an <code>&lt;input&gt;</code> element with different styles, colors, and widths.
+                </li>
+            </ul>
+            <hr>
+            <h3 id="css-selectors">CSS Selectors</h3>
+            <ul>
+                <li><strong>Selectors</strong>: Target specific HTML elements to apply styles.<ul>
+                        <li><strong>Element Selector</strong>: Selects elements by tag name (e.g., <code>p</code>).</li>
+                        <li><strong>Class Selector</strong>: Selects elements with a specific class
+                            (<code>.class-name</code>).</li>
+                        <li><strong>ID Selector</strong>: Selects elements with a specific ID (<code>#id-name</code>).
+                        </li>
+                        <li><strong>Attribute Selector</strong>: Selects elements based on attributes
+                            (<code>[type=&quot;text&quot;]</code>).</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>/* Element Selector */
+            p {
+              color: blue;
+            }
+            
+            /* Class Selector */
+            .button {
+              background-color: yellow;
+            }
+            
+            /* ID Selector */
+            #header {
+              font-size: 24px;
+            }
+            
+            /* Attribute Selector */
+            input[type=&quot;text&quot;] {
+              border: 1px solid gray;
+            }
+            </code></pre>
+            <p><strong>Code Example</strong>:</p>
+            <pre><code>h2 {
+              color: purple;
+            }
+            
+            .highlight {
+              background-color: yellow;
+            }
+            
+            #unique {
+              margin: 10px;
+            }
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Apply different styles using element, class, ID, and attribute selectors. For example, create a
+                    class for buttons, an ID for a header, and style text inputs with an attribute selector.</li>
+            </ul>
+            <hr>
+            <h3 id="css-alignment">CSS Alignment (Text/Image/Content)</h3>
+            <ul>
+                <li><strong>Text Alignment</strong>: Align text within its container (<code>text-align</code>).</li>
+                <li><strong>Vertical Alignment</strong>: Align inline or table-cell elements
+                    (<code>vertical-align</code>).</li>
+                <li><strong>Image Alignment</strong>: Align images within text or containers (<code>float</code>,
+                    <code>display</code>).
+                </li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>/* Text Alignment */
+            p {
+              text-align: center; /* Options: left, right, center, justify */
+            }
+            
+            /* Vertical Alignment */
+            img {
+              vertical-align: middle; /* Options: baseline, sub, super, top, middle, bottom */
+            }
+            
+            /* Image Alignment */
+            img {
+              float: left; /* Options: left, right, none */
+            }
+            </code></pre>
+            <p><strong>Code Example</strong>:</p>
+            <pre><code>h1 {
+              text-align: right;
+            }
+            
+            img {
+              vertical-align: top;
+              float: right;
+            }
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Align text to the center, an image to the right, and adjust vertical alignment for inline elements.
+                </li>
+            </ul>
+            <hr>
+            <h3 id="css-width-and-height">CSS Width &amp; Height</h3>
+            <ul>
+                <li><strong>Width and Height</strong>: Set dimensions of elements (<code>width</code>,
+                    <code>height</code>).
+                </li>
+                <li><strong>Units</strong>: Use pixels (<code>px</code>), percentages (<code>%</code>), viewport units
+                    (<code>vw</code>, <code>vh</code>).</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>div {
+              width: 50%; /* Percentage */
+              height: 200px; /* Pixels */
+            }
+            </code></pre>
+            <p><strong>Code Example</strong>:</p>
+            <pre><code>.container {
+              width: 100vw; /* Full viewport width */
+              height: 100vh; /* Full viewport height */
+            }
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Define width and height for a <code>&lt;div&gt;</code> using different units, such as pixels and
+                    percentages.</li>
+            </ul>
+            <hr>
+            <h3 id="css-text-and-fonts">CSS Text &amp; Fonts</h3>
+            <ul>
+                <li><strong>Text Properties</strong>: Style text (<code>font-family</code>, <code>font-size</code>,
+                    <code>font-weight</code>, <code>line-height</code>, <code>text-transform</code>).
+                </li>
+                <li><strong>Font Families</strong>: Specify custom and web-safe fonts.</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>p {
+              font-family: Arial, sans-serif;
+              font-size: 16px;
+              font-weight: bold; /* Options: normal, bold, bolder, lighter, or numerical values */
+              line-height: 1.5;
+              text-transform: uppercase; /* Options: uppercase, lowercase, capitalize, none */
+            }
+            </code></pre>
+            <p><strong>Code Example</strong>:</p>
+            <pre><code>h2 {
+              font-family: &#39;Georgia&#39;, serif;
+              font-size: 24px;
+              text-transform: capitalize;
+            }
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Style text elements using different font families, sizes, weights, and transformations.</li>
+            </ul>
+            <hr>
+            <h3 id="css-links">CSS Links</h3>
+            <ul>
+                <li><strong>Link States</strong>: Style links in different states (<code>:link</code>,
+                    <code>:visited</code>, <code>:hover</code>, <code>:active</code>).
+                </li>
+                <li><strong>Pseudo-classes</strong>: Apply styles based on user interactions.</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>a:link {
+              color: blue; /* Unvisited link */
+            }
+            
+            a:visited {
+              color: purple; /* Visited link */
+            }
+            
+            a:hover {
+              color: red; /* Mouse over link */
+            }
+            
+            a:active {
+              color: orange; /* Clicked link */
+            }
+            </code></pre>
+            <p><strong>Code Example</strong>:</p>
+            <pre><code>a {
+              text-decoration: none; /* Remove underline */
+            }
+            
+            a:hover {
+              text-decoration: underline; /* Underline on hover */
+            }
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Style links to change colors based on their state, and remove or add underlines on hover.</li>
+            </ul>
+            <hr>
+            <h3 id="css-buttons">CSS Buttons</h3>
+            <ul>
+                <li><strong>Button Styling</strong>: Customize buttons using various CSS properties
+                    (<code>background-color</code>, <code>border</code>, <code>padding</code>, <code>font-size</code>,
+                    <code>cursor</code>).
+                </li>
+                <li><strong>Button States</strong>: Style different button states (<code>:hover</code>,
+                    <code>:active</code>, <code>:focus</code>).
+                </li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>button {
+              background-color: blue;
+              color: white;
+              border: none;
+              padding: 10px 20px;
+              font-size: 16px;
+              cursor: pointer; /* Change cursor on hover */
+            }
+            
+            button:hover {
+              background-color: darkblue;
+            }
+            
+            button:active {
+              background-color: navy;
+            }
+            </code></pre>
+            <p><strong>Code Example</strong>:</p>
+            <pre><code>.btn-primary {
+              background-color: green;
+              border-radius: 5px; /* Rounded corners */
+            }
+            
+            .btn-primary:hover {
+              background-color: darkgreen;
+            }
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Create and style a button with different states (normal, hover, active). Experiment with background
+                    colors, padding, and border-radius.</li>
+            </ul>
+            <hr>
+            <h3 id="css-flex-box">CSS Flex Box</h3>
+            <ul>
+                <li><strong>Flexbox</strong>: Layout model for aligning items in containers
+                    (<code>display: flex</code>).</li>
+                <li><strong>Properties</strong>:<ul>
+                        <li><code>flex-direction</code>: Defines direction of flex items (e.g., <code>row</code>,
+                            <code>column</code>).
+                        </li>
+                        <li><code>justify-content</code>: Aligns items horizontally (<code>flex-start</code>,
+                            <code>center</code>, <code>space-between</code>, <code>space-around</code>).
+                        </li>
+                        <li><code>align-items</code>: Aligns items vertically (<code>flex-start</code>,
+                            <code>center</code>, <code>baseline</code>, <code>stretch</code>).
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>.container {
+              display: flex;
+              flex-direction: row; /* or column */
+              justify-content: center;
+              align-items: center;
+            }
+            </code></pre>
+            <p><strong>Code Example</strong>:</p>
+            <pre><code>.flex-container {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+            }
+            
+            .flex-item {
+              margin: 10px;
+            }
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Create a flex container and align items using different flexbox properties.</li>
+            </ul>
+            <hr>
+            <h3 id="css-forms">CSS Forms</h3>
+            <ul>
+                <li><strong>Form Styling</strong>: Customize form elements (<code>input</code>, <code>textarea</code>,
+                    <code>select</code>, <code>button</code>).
+                </li>
+                <li><strong>Properties</strong>: Use properties like <code>padding</code>, <code>border</code>,
+                    <code>background</code>, <code>font-size</code> to style form controls.
+                </li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>input, textarea, select, button {
+              padding: 10px;
+              border: 1px solid #ccc;
+              font-size: 16px;
+            }
+            </code></pre>
+            <p><strong>Code Example</strong>:</p>
+            <pre><code>input[type=&quot;text&quot;] {
+              border-radius: 5px; /* Rounded corners */
+            }
+            
+            textarea {
+              resize: vertical; /* Allow vertical resizing only */
+            }
+            
+            button {
+              background-color: #4CAF50; /* Green */
+              color: white;
+            }
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Style various form elements (text fields, text areas, buttons) with padding, border, and background
+                    color.</li>
+            </ul>
+            <hr>
+            <h3 id="css-lists">CSS Lists</h3>
+            <ul>
+                <li><strong>List Styling</strong>: Customize list appearance (<code>list-style-type</code>,
+                    <code>list-style-position</code>, <code>list-style-image</code>).
+                </li>
+                <li><strong>Properties</strong>:<ul>
+                        <li><code>list-style-type</code>: Defines bullet or number style (e.g., <code>disc</code>,
+                            <code>circle</code>, <code>square</code>, <code>decimal</code>).
+                        </li>
+                        <li><code>list-style-position</code>: Position of list marker (<code>inside</code>,
+                            <code>outside</code>).
+                        </li>
+                        <li><code>list-style-image</code>: Custom image for list marker.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>ul {
+              list-style-type: circle;
+              list-style-position: inside;
+            }
+            
+            ol {
+              list-style-type: decimal;
+            }
+            
+            ul.custom {
+              list-style-image: url(&#39;bullet.png&#39;);
+            }
+            </code></pre>
+            <p><strong>Code Example</strong>:</p>
+            <pre><code>ul {
+              list-style-type: square;
+              padding-left: 20px;
+            }
+            
+            ol {
+              list-style-type: lower-alpha;
+            }
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Style an unordered list and an ordered list with different list styles, positions, and custom
+                    images.</li>
+            </ul>
+            <hr>
+            <h3 id="css-media-queries">CSS Media Queries</h3>
+            <ul>
+                <li><strong>Media Queries</strong>: Apply styles based on device characteristics (e.g., screen width).
+                </li>
+                <li><strong>Usage</strong>: Create responsive designs by targeting specific devices or screen sizes.
+                </li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>/* Styles for devices with a max-width of 600px */
+            @media (max-width: 600px) {
+              body {
+                background-color: lightyellow;
+              }
+            
+              .container {
+                padding: 10px;
+              }
+            }
+            
+            /* Styles for devices with a min-width of 601px */
+            @media (min-width: 601px) {
+              body {
+                background-color: lightblue;
+              }
+            }
+            </code></pre>
+            <p><strong>Code Example</strong>:</p>
+            <pre><code>@media (max-width: 768px) {
+              .sidebar {
+                display: none; /* Hide sidebar on small screens */
+              }
+            }
+            
+            @media (min-width: 769px) {
+              .sidebar {
+                display: block; /* Show sidebar on larger screens */
+              }
+            }
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Implement media queries to adjust styles for different screen sizes, such as hiding elements on
+                    smaller screens or changing layouts.</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <hr>
+        <nav>
+            <a href="/">Home</a> &nbsp;
+            <a href="philosophy-content.html">Philosophy</a> &nbsp;
+            <a href="software-development-content.html">Software</a> &nbsp;
+            <a href="terms.html">Terms</a> &nbsp;
+            <a href="privacy.html">Privacy</a> &nbsp;
+            <a href="cookie-policy.html">Cookies</a> &nbsp;
+            <a href="disclaimer.html">Disclaimer</a> &nbsp;
+        </nav>
+        <p>Copyright &copy; 2024 M. V. Prasad. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

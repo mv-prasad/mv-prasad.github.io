@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. V. Prasad | Software Development Courses | Philosophy</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        hr {
+            border: none;
+            margin-top: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 title="M. V. Prasad">M.</h1>
+        <p><a href="/">Home</a> / <a href="software-development-content.html">Software Development Content</a></p>
+    </header>
+    <main>
+        <img src="icon.png" width="64" height="64" id="icon">
+
+        <section>
+            <h2>HTML Beginner Course</h2>
+            <ol>
+                <li><a href="#html-introduction">HTML Introduction</a></li>
+                <li><a href="#html-structure">HTML Structure</a></li>
+                <li><a href="#html-headings">HTML Headings</a></li>
+                <li><a href="#html-Paragraphs">HTML Paragraphs</a></li>
+                <li><a href="#html-text-formatting">HTML Text Formatting</a></li>
+                <li><a href="#html-block-and-inline-elements">HTML Block and Inline Elements</a></li>
+                <li><a href="#html-lists">HTML Lists</a></li>
+                <li><a href="#html-tables">HTML Tables</a></li>
+                <li><a href="#html-links">HTML Links</a></li>
+                <li><a href="#html-attributes">HTML Attributes</a></li>
+                <li><a href="#html-images">HTML Images</a></li>
+                <li><a href="#html-self-closing-elements">HTML Self-Closing Elements</a></li>
+                <li><a href="#html-video">HTML Video</a></li>
+                <li><a href="#html-audio">HTML Audio</a></li>
+                <li><a href="#html-buttons">HTML Buttons</a></li>
+                <li><a href="#html-forms-text-fields">HTML Forms: Text Fields</a></li>
+                <li><a href="#html-forms-text-area">HTML Forms: Text Area</a></li>
+                <li><a href="#html-forms-radio-buttons">HTML Forms: Radio Buttons</a></li>
+                <li><a href="#html-forms-check-boxes">HTML Forms: Check Boxes</a></li>
+                <li><a href="#html-forms-drop-downs">HTML Forms: Drop Downs</a></li>
+                <li><a href="#html-favicon">HTML Favicon</a></li>
+                <li><a href="#html-symbols">HTML Symbols</a></li>
+                <li><a href="#html-emojis">HTML Emojis</a></li>
+                <li><a href="#html-semantics">HTML Semantics</a></li>
+                <li><a href="#html-iframe-youtube">HTML iFrame/Youtube</a></li>                
+            </ol>
+
+
+        </section>
+
+        <section>
+            <h3 id="html-introduction">Introduction to HTML</h3>
+            <ul>
+                <li><strong>HTML (HyperText Markup Language)</strong>: The standard language for creating web pages.
+                </li>
+                <li><strong>Basic structure</strong>: HTML documents consist of elements represented by tags.</li>
+                <li><strong>Tags</strong>: Surround content and apply meaning (e.g., <code>&lt;p&gt;</code>,
+                    <code>&lt;h1&gt;</code>, <code>&lt;div&gt;</code>).
+                </li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Create a basic HTML page with a title and a paragraph.</li>
+            </ul>
+            <hr>
+            <h3 id="html-structure">HTML Structure</h3>
+            <ul>
+                <li><strong>DOCTYPE declaration</strong>: Tells the browser the version of HTML (e.g.,
+                    <code>&lt;!DOCTYPE html&gt;</code>).
+                </li>
+                <li><strong>HTML document structure</strong>:<ul>
+                        <li><code>&lt;html&gt;</code>: Root element.</li>
+                        <li><code>&lt;head&gt;</code>: Contains meta-information (e.g., title, links to CSS).</li>
+                        <li><code>&lt;body&gt;</code>: Contains the content of the page.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Webpage&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Welcome to My Webpage&lt;/h1&gt;
+        &lt;p&gt;This is an example of HTML structure.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Create an HTML document with a title and an <code>h1</code> heading inside the body.</li>
+            </ul>
+            <hr>
+            <h3 id="html-headings">HTML Headings</h3>
+            <ul>
+                <li><strong>Headings</strong>: Represent different levels of content (e.g., <code>&lt;h1&gt;</code> to
+                    <code>&lt;h6&gt;</code>).
+                </li>
+                <li><strong>Usage</strong>: <code>&lt;h1&gt;</code> is the highest level, typically used for main
+                    titles.</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            
+            &lt;h1&gt;Main Heading&lt;/h1&gt;
+            &lt;h2&gt;Subheading&lt;/h2&gt;
+            &lt;h3&gt;Sub-subheading&lt;/h3&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Create a webpage with all six levels of headings, displaying a content hierarchy.</li>
+            </ul>
+            <hr>
+            <h3 id="html-paragraphs">HTML Paragraphs</h3>
+            <ul>
+                <li><strong>Paragraphs</strong>: Represent blocks of text (e.g., <code>&lt;p&gt;</code>).</li>
+                <li><strong>Usage</strong>: Used for regular text content in documents.</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;p&gt;This is a paragraph of text. HTML paragraphs are block-level elements.&lt;/p&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Add multiple paragraphs to your webpage, explaining a topic of your choice.</li>
+            </ul>
+            <hr>
+            <h3 id="html-text-formatting">HTML Text Formatting</h3>
+            <ul>
+                <li><strong>Text Formatting Elements</strong>: Used to style text (e.g., <code>&lt;strong&gt;</code>,
+                    <code>&lt;em&gt;</code>, <code>&lt;b&gt;</code>, <code>&lt;i&gt;</code>).
+                </li>
+                <li><strong>Purpose</strong>: Enhance text appearance and meaning.</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;strong&gt;Bold text&lt;/strong&gt;
+            &lt;em&gt;Italic text&lt;/em&gt;
+            &lt;b&gt;Bold text (less semantic)&lt;/b&gt;
+            &lt;i&gt;Italic text (less semantic)&lt;/i&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Format a block of text using different formatting elements and observe the changes.</li>
+            </ul>
+            <hr>
+            <h3 id="html-block-and-inline-elements">HTML Block and Inline Elements</h3>
+            <ul>
+            <li><strong>Block Elements</strong>: Occupy the full width of their parent container (e.g., <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>).</li>
+            <li><strong>Examples</strong>: <code>&lt;div&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;table&gt;</code>.</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;div&gt;
+              &lt;h1&gt;Block Level Element&lt;/h1&gt;
+              &lt;p&gt;This is a paragraph inside a div.&lt;/p&gt;
+            &lt;/div&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+            <li>Create a webpage with a <code>div</code> containing a heading and a paragraph.</li>
+            </ul>
+            <hr>
+            <h3 id="html-lists">HTML Lists</h3>
+            <ul>
+                <li><strong>Unordered Lists</strong>: Create lists with bullets (<code>&lt;ul&gt;</code>).</li>
+                <li><strong>Ordered Lists</strong>: Create lists with numbers (<code>&lt;ol&gt;</code>).</li>
+                <li><strong>List Items</strong>: Represent individual list items (<code>&lt;li&gt;</code>).</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;ul&gt;
+              &lt;li&gt;Item 1&lt;/li&gt;
+              &lt;li&gt;Item 2&lt;/li&gt;
+            &lt;/ul&gt;
+            
+            &lt;ol&gt;
+              &lt;li&gt;First item&lt;/li&gt;
+              &lt;li&gt;Second item&lt;/li&gt;
+            &lt;/ol&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Create both an unordered and an ordered list on your webpage with at least three items each.</li>
+            </ul>
+            <hr>
+            <h3 id="html-tables">HTML Tables</h3>
+            <ul>
+                <li><strong>Tables</strong>: Display tabular data (<code>&lt;table&gt;</code>).</li>
+                <li><strong>Table Rows</strong>: Represent each row (<code>&lt;tr&gt;</code>).</li>
+                <li><strong>Table Headers</strong>: Define headers (<code>&lt;th&gt;</code>).</li>
+                <li><strong>Table Data</strong>: Represent data cells (<code>&lt;td&gt;</code>).</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;table&gt;
+              &lt;tr&gt;
+                &lt;th&gt;Header 1&lt;/th&gt;
+                &lt;th&gt;Header 2&lt;/th&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Data 1&lt;/td&gt;
+                &lt;td&gt;Data 2&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Create a table with at least two rows and two columns, including headers.</li>
+            </ul>
+            <hr>
+            <h3 id="html-links">HTML Links</h3>
+            <ul>
+                <li><strong>Links</strong>: Create hyperlinks to navigate between pages (<code>&lt;a&gt;</code>).</li>
+                <li><strong>Attributes</strong>: <code>href</code> specifies the URL, <code>target</code> controls how
+                    the link opens (e.g., <code>_blank</code>).</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;a href=&quot;https://www.example.com&quot; target=&quot;_blank&quot;&gt;Visit Example&lt;/a&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Add a link to your webpage that points to an external website and opens in a new tab.</li>
+            </ul>
+            <hr>
+            <h3 id="html-attributes">HTML Attributes</h3>
+            <ul>
+                <li><strong>Attributes</strong>: Provide additional information about HTML elements (e.g.,
+                    <code>id</code>, <code>class</code>, <code>src</code>, <code>alt</code>).
+                </li>
+                <li><strong>Usage</strong>: Modify the behavior and appearance of elements.</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;img src=&quot;image.jpg&quot; alt=&quot;Description of image&quot;&gt;
+            &lt;a href=&quot;https://www.example.com&quot; class=&quot;link&quot;&gt;Example Link&lt;/a&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Add an image with <code>src</code> and <code>alt</code> attributes and a link with a
+                    <code>class</code> attribute to your webpage.
+                </li>
+            </ul>
+            <hr>
+            <h3 id="html-images">HTML Images</h3>
+            <ul>
+                <li><strong>Images</strong>: Display visual content (<code>&lt;img&gt;</code>).</li>
+                <li><strong>Attributes</strong>: <code>src</code> specifies the image URL, <code>alt</code> provides
+                    alternative text, <code>width</code> and <code>height</code> set dimensions.</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;img src=&quot;image.jpg&quot; alt=&quot;Description of the image&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Insert an image into your webpage with a descriptive <code>alt</code> attribute and adjust its size
+                    using <code>width</code> and <code>height</code>.</li>
+            </ul>
+            <hr>
+            <h3  id="html-self-closing-elements">HTML Self-Closing Elements</h3>
+            <ul>
+                <li><strong>Self-Closing Tags</strong>: HTML5 allows certain elements to be self-closing (e.g.,
+                    <code>&lt;img&gt;</code>, <code>&lt;br&gt;</code>, <code>&lt;hr&gt;</code>).
+                </li>
+                <li><strong>Usage</strong>: These tags do not require a closing counterpart.</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;img src=&quot;logo.png&quot; alt=&quot;Logo&quot;&gt;
+            &lt;br&gt;
+            &lt;hr&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Add a horizontal rule and a line break to your webpage, and include an image using a self-closing
+                    tag.</li>
+            </ul>
+            <hr>
+            <h3 id="html-video">HTML Video</h3>
+            <ul>
+                <li><strong>Video</strong>: Embed video content (<code>&lt;video&gt;</code>).</li>
+                <li><strong>Attributes</strong>: <code>src</code> specifies the video file, <code>controls</code> adds
+                    playback controls, <code>autoplay</code> starts video automatically.</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;video src=&quot;video.mp4&quot; controls width=&quot;640&quot; height=&quot;360&quot;&gt;
+              Your browser does not support the video tag.
+            &lt;/video&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Embed a video into your webpage and add playback controls. Ensure you provide a fallback message for
+                    unsupported browsers.</li>
+            </ul>
+            <hr>
+            <h3 id="html-audio">HTML Audio</h3>
+            <ul>
+                <li><strong>Audio</strong>: Embed audio content (<code>&lt;audio&gt;</code>).</li>
+                <li><strong>Attributes</strong>: <code>src</code> specifies the audio file, <code>controls</code> adds
+                    playback controls, <code>autoplay</code> starts audio automatically.</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;audio src=&quot;audio.mp3&quot; controls&gt;
+              Your browser does not support the audio tag.
+            &lt;/audio&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Add an audio file to your webpage with playback controls and a fallback message for unsupported
+                    browsers.</li>
+            </ul>
+            <hr>
+            <h3 id="html-buttons">HTML Buttons</h3>
+            <ul>
+                <li><strong>Buttons</strong>: Create interactive buttons (<code>&lt;button&gt;</code>).</li>
+                <li><strong>Types</strong>: <code>type</code> attribute specifies button behavior (<code>submit</code>,
+                    <code>reset</code>, <code>button</code>).
+                </li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;button type=&quot;button&quot;&gt;Click Me&lt;/button&gt;
+            &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+            &lt;button type=&quot;reset&quot;&gt;Reset&lt;/button&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Create three buttons on your webpage with different types (<code>button</code>, <code>submit</code>,
+                    <code>reset</code>) and add simple JavaScript alerts to demonstrate their functionality.
+                </li>
+            </ul>
+            <hr>
+            <h3 id="html-forms-text-fields">HTML Forms: Text Fields</h3>
+            <ul>
+                <li><strong>Text Fields</strong>: Allow users to enter text
+                    (<code>&lt;input type=&quot;text&quot;&gt;</code>).</li>
+                <li><strong>Attributes</strong>: <code>name</code> assigns a name to the input field,
+                    <code>placeholder</code> provides a hint.
+                </li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;form&gt;
+              &lt;label for=&quot;username&quot;&gt;Username:&lt;/label&gt;
+              &lt;input type=&quot;text&quot; id=&quot;username&quot; name=&quot;username&quot; placeholder=&quot;Enter your username&quot;&gt;
+            &lt;/form&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Create a form with a text field for entering a username, and use a placeholder to guide the user.
+                </li>
+            </ul>
+            <hr>
+            <h3 id="html-forms-text-area">HTML Forms: Text Area</h3>
+            <ul>
+                <li><strong>Text Area</strong>: Allows multi-line text input (<code>&lt;textarea&gt;</code>).</li>
+                <li><strong>Attributes</strong>: <code>rows</code> and <code>cols</code> define the size,
+                    <code>name</code> assigns a name.
+                </li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;form&gt;
+              &lt;label for=&quot;message&quot;&gt;Message:&lt;/label&gt;
+              &lt;textarea id=&quot;message&quot; name=&quot;message&quot; rows=&quot;4&quot; cols=&quot;50&quot; placeholder=&quot;Enter your message&quot;&gt;&lt;/textarea&gt;
+            &lt;/form&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Add a text area to your form where users can enter a message, specifying the number of rows and
+                    columns.</li>
+            </ul>
+            <hr>
+            <h3 id="html-forms-radio-buttons">HTML Forms: Radio Buttons</h3>
+            <ul>
+                <li><strong>Radio Buttons</strong>: Allow selection of one option from a set
+                    (<code>&lt;input type=&quot;radio&quot;&gt;</code>).</li>
+                <li><strong>Attributes</strong>: <code>name</code> groups radio buttons, <code>value</code> specifies
+                    the option value.</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;form&gt;
+              &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;male&quot;&gt; Male&lt;/label&gt;
+              &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;female&quot;&gt; Female&lt;/label&gt;
+            &lt;/form&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Create a form with radio buttons for selecting a gender. Ensure all buttons share the same
+                    <code>name</code> attribute.
+                </li>
+            </ul>
+            <hr>
+            <h3 id="html-forms-check-boxes">HTML Forms: Check Boxes</h3>
+            <ul>
+                <li><strong>Check Boxes</strong>: Allow multiple selections from a set
+                    (<code>&lt;input type=&quot;checkbox&quot;&gt;</code>).</li>
+                <li><strong>Attributes</strong>: <code>name</code> groups checkboxes, <code>value</code> specifies the
+                    option value.</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;form&gt;
+              &lt;label&gt;&lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; value=&quot;reading&quot;&gt; Reading&lt;/label&gt;
+              &lt;label&gt;&lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; value=&quot;traveling&quot;&gt; Traveling&lt;/label&gt;
+            &lt;/form&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Create a form with checkboxes for selecting hobbies. Ensure each checkbox has a unique value.</li>
+            </ul>
+            <hr>
+            <h3 id="html-forms-drop-downs">HTML Forms: Drop Downs</h3>
+            <ul>
+                <li><strong>Drop Down Menus</strong>: Allow selection from a list (<code>&lt;select&gt;</code> with
+                    <code>&lt;option&gt;</code>).
+                </li>
+                <li><strong>Attributes</strong>: <code>name</code> assigns a name, <code>value</code> specifies the
+                    option value.</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;form&gt;
+              &lt;label for=&quot;car&quot;&gt;Choose a car:&lt;/label&gt;
+              &lt;select id=&quot;car&quot; name=&quot;car&quot;&gt;
+                &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;
+                &lt;option value=&quot;saab&quot;&gt;Saab&lt;/option&gt;
+                &lt;option value=&quot;fiat&quot;&gt;Fiat&lt;/option&gt;
+                &lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/form&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Add a drop-down menu to your form that allows users to select a car model from a list of options.
+                </li>
+            </ul>
+            <hr>
+            <h3 id="html-favicon">HTML Favicon</h3>
+            <ul>
+                <li><strong>Favicon</strong>: Small icon displayed in the browser tab
+                    (<code>&lt;link rel=&quot;icon&quot;&gt;</code>).</li>
+                <li><strong>Attributes</strong>: <code>href</code> specifies the icon file location, <code>type</code>
+                    specifies the file type.</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;head&gt;
+              &lt;link rel=&quot;icon&quot; href=&quot;favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+            &lt;/head&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Add a favicon to your webpage by linking to an icon file.</li>
+            </ul>
+            <hr>
+            <h3 id="html-symbols">HTML Symbols</h3>
+            <ul>
+                <li><strong>Symbols</strong>: Special characters represented by HTML entities (e.g.,
+                    <code>&amp;copy;</code>, <code>&amp;amp;</code>).
+                </li>
+                <li><strong>Usage</strong>: Display characters that are otherwise reserved or special.</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;p&gt;&amp;copy; 2024 Your Company&lt;/p&gt;
+            &lt;p&gt;&amp;amp; More Symbols&lt;/p&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Add a paragraph to your webpage using HTML entities for copyright and ampersand symbols.</li>
+            </ul>
+            <hr>
+            <h3 id="html-emojis">HTML Emojis</h3>
+            <ul>
+                <li><strong>Emojis</strong>: Use Unicode characters to add emojis to your text.</li>
+                <li><strong>Usage</strong>: Enhance visual appeal and expressiveness.</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;p&gt;Have a great day! 😊&lt;/p&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Include several emojis in a paragraph to convey a message or emotion.</li>
+            </ul>
+            <hr>
+            <h3 id="html-semantics">HTML Semantics</h3>
+            <ul>
+                <li><strong>Semantics</strong>: Use HTML elements that clearly describe their meaning (e.g.,
+                    <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>,
+                    <code>&lt;section&gt;</code>).
+                </li>
+                <li><strong>Purpose</strong>: Improve readability and accessibility.</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;header&gt;
+              &lt;h1&gt;Page Title&lt;/h1&gt;
+            &lt;/header&gt;
+            &lt;main&gt;
+              &lt;section&gt;
+                &lt;h2&gt;Section Title&lt;/h2&gt;
+                &lt;p&gt;Section content goes here.&lt;/p&gt;
+              &lt;/section&gt;
+            &lt;/main&gt;
+            &lt;footer&gt;
+              &lt;p&gt;Footer content.&lt;/p&gt;
+            &lt;/footer&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Structure a webpage using semantic elements to define the header, main content, and footer.</li>
+            </ul>
+            <hr>
+            <h3 id="html-iframe-youtube">HTML iFrame/Youtube</h3>
+            <ul>
+                <li><strong>iFrame</strong>: Embed external content within a page (<code>&lt;iframe&gt;</code>).</li>
+                <li><strong>Attributes</strong>: <code>src</code> specifies the URL of the content, <code>width</code>
+                    and <code>height</code> set dimensions.</li>
+            </ul>
+            <p><strong>Syntax</strong>:</p>
+            <pre><code>
+            &lt;iframe src=&quot;https://www.youtube.com/embed/dQw4w9WgXcQ&quot; width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+            </code></pre>
+            <p><strong>Exercise</strong>:</p>
+            <ul>
+                <li>Embed a YouTube video on your webpage using an iframe. Adjust the width and height as needed.</li>
+            </ul>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <hr>
+        <nav>
+            <a href="/">Home</a> &nbsp;
+            <a href="philosophy-content.html">Philosophy</a> &nbsp;
+            <a href="software-development-content.html">Software</a> &nbsp;
+            <a href="terms.html">Terms</a> &nbsp;
+            <a href="privacy.html">Privacy</a> &nbsp;
+            <a href="cookie-policy.html">Cookies</a> &nbsp;
+            <a href="disclaimer.html">Disclaimer</a> &nbsp;
+        </nav>
+        <p>Copyright &copy; 2024 M. V. Prasad. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M. V. Prasad | Software Development Courses | Philosophy</title>
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    hr {
+      border: none;
+      margin-top: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 title="M. V. Prasad">M.</h1>
+    <p><a href="/">Home</a> / <a href="software-development-content.html">Software Development Content</a></p>
+  </header>
+  <main>
+    <img src="icon.png" width="64" height="64" id="icon">
+
+    <section>
+      <h2>JavaScript Programming Beginner Course</h2>
+      <ol>
+        <li><a href="#basics-of-programming-using-javascript">Basics of Programming using JavaScript</a></li>
+        <li><a href="#javascript-introduction">JavaScript Introduction</a></li>
+        <li><a href="#javascript-in-html-pages">JavaScript in HTML Page</a></li>
+        <li><a href="#javascript-variables">JavaScript Variables</a></li>
+        <li><a href="#javascript-data-types">JavaScript Data Types</a></li>
+        <li><a href="#javascript-arithmetic-operators">JavaScript Arithmetic Operators</a></li>
+        <li><a href="#javascript-assignment-operators">JavaScript Assignment Operators</a></li>
+        <li><a href="#javascript-functions">JavaScript Functions</a></li>
+        <li><a href="#javascript-conditional-statements">JavaScript Conditional Statements</a></li>
+        <li><a href="#javascript-loops">JavaScript Loops</a></li>
+        <li><a href="#javascript-comments">JavaScript Comments</a></li>
+        <li><a href="#javascript-objects">JavaScript Objects</a></li>
+        <li><a href="#javascript-strings">JavaScript Strings</a></li>
+        <li><a href="#javascript-arrays">JavaScript Arrays</a></li>
+        <li><a href="#javascript-json">JavaScript JSON</a></li>
+        <li><a href="#javascript-debugging">JavaScript Debugging</a></li>
+        <li><a href="#javascript-integration-with-html-pages">JavaScript integration with HTML Pages</a></li>
+        <li><a href="#html-dom-introduction">HTML DOM Introduction</a></li>
+        <li><a href="#javascript-reading-the-html">JavaScript Reading the HTML </a></li>
+        <li><a href="#javascript-updating-the-html">JavaScript Updating the HTML</a></li>
+        <li><a href="#javascript-reading-the-css">JavaScript Reading the CSS</a></li>
+        <li><a href="#javascript-updating-the-css">JavaScript Updating the CSS</a></li>
+        <li><a href="#javascript-events">JavaScript Events and EventListener</a></li>
+      </ol>
+
+
+    </section>
+
+    <section>
+
+      <h3 id="basics-of-programming-using-javascript">Basics of Programming using JavaScript</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li>
+          <p><strong>What is Programming?</strong> </p>
+          <ul>
+            <li>Writing instructions for a computer to perform specific tasks.</li>
+            <li>Programming involves understanding algorithms and logic.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Introduction to JavaScript:</strong></p>
+          <ul>
+            <li>JavaScript is a versatile, high-level programming language used for web development.</li>
+            <li>It allows developers to create dynamic and interactive web content.</li>
+          </ul>
+        </li>
+      </ul>
+      <h4><strong>Key Concepts:</strong></h4>
+      <ul>
+        <li><strong>Variables</strong>: Storage for data values.</li>
+        <li><strong>Data Types</strong>: Different types of data such as numbers, strings, etc.</li>
+        <li><strong>Operators</strong>: Symbols that perform operations on variables and values.</li>
+        <li><strong>Functions</strong>: Blocks of code designed to perform a particular task.</li>
+        <li><strong>Conditional Statements</strong>: Code structures that execute based on certain conditions.</li>
+        <li><strong>Loops</strong>: Code structures that repeat a block of code multiple times.</li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code>
+          // Variable declaration and assignment
+          let message = &quot;Hello, World!&quot;;
+          
+          // Function declaration
+          function greet(name) {
+            return &quot;Hello, &quot; + name + &quot;!&quot;;
+          }
+          
+          // Calling the function
+          console.log(greet(&quot;Alice&quot;)); // Outputs: Hello, Alice!
+          
+          // Conditional statement
+          if (message === &quot;Hello, World!&quot;) {
+            console.log(&quot;The message is correct.&quot;);
+          }
+          
+          // Loop
+          for (let i = 0; i &lt; 5; i++) {
+            console.log(i); // Outputs numbers 0 through 4
+          }
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Write a function</strong> that returns the sum of two numbers.</li>
+        <li><strong>Create a loop</strong> that prints numbers 1 through 10.</li>
+        <li><strong>Write a conditional statement</strong> that checks if a variable holds a value greater than 10 and
+          logs a message if true.</li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>Creating a Simple Calculator:</strong> Use JavaScript to build a calculator that performs basic
+          arithmetic operations like addition, subtraction, multiplication, and division.</li>
+      </ul>
+      <hr>
+      <h3 id="javascript-introduction">JavaScript Introduction</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li>
+          <p><strong>History and Evolution:</strong></p>
+          <ul>
+            <li>Developed by Brendan Eich in 1995.</li>
+            <li>Initially called Mocha, then LiveScript, and finally JavaScript.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>JavaScript&#39;s Role in Web Development:</strong></p>
+          <ul>
+            <li>Enhances HTML and CSS by adding interactivity and dynamic content.</li>
+          </ul>
+        </li>
+      </ul>
+      <h4><strong>Key Concepts:</strong></h4>
+      <ul>
+        <li><strong>ECMAScript Standard:</strong> The specification JavaScript follows.</li>
+        <li><strong>Browser Compatibility:</strong> Different browsers may have slightly different implementations.</li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+          &lt;html&gt;
+          &lt;head&gt;
+            &lt;title&gt;JavaScript Introduction&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1&gt;Welcome to JavaScript&lt;/h1&gt;
+            &lt;script&gt;
+              // JavaScript code
+              console.log(&quot;Hello, JavaScript!&quot;);
+            &lt;/script&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Create an HTML file</strong> with an embedded JavaScript code that displays &quot;Welcome to
+          JavaScript&quot; in the console.</li>
+        <li><strong>Modify the script</strong> to show an alert box with the message &quot;Hello World!&quot;.</li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>Creating Interactive Elements:</strong> Use JavaScript to make a button that shows an alert when
+          clicked.</li>
+      </ul>
+      <hr>
+      <h3 id="javascript-in-html-pages">JavaScript in HTML Page</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li><strong>Incorporating JavaScript:</strong>
+          <ul>
+            <li>Inline, Internal, and External JavaScript.</li>
+            <li><strong>Inline JavaScript:</strong> Directly within HTML elements.</li>
+            <li><strong>Internal JavaScript:</strong> Inside <code>&lt;script&gt;</code> tags within an HTML file.</li>
+            <li><strong>External JavaScript:</strong> Linked via an external <code>.js</code> file.</li>
+          </ul>
+        </li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+          &lt;html&gt;
+          &lt;head&gt;
+            &lt;title&gt;JavaScript in HTML&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1&gt;JavaScript in HTML&lt;/h1&gt;
+            &lt;!-- Internal JavaScript --&gt;
+            &lt;script&gt;
+              document.write(&quot;Hello from internal JavaScript!&quot;);
+            &lt;/script&gt;
+            &lt;!-- External JavaScript --&gt;
+            &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+          </code></pre>
+      <p><strong>script.js</strong></p>
+      <pre><code>
+          console.log(&quot;Hello from external JavaScript!&quot;);
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Create an HTML file</strong> with internal JavaScript that changes the background color of the page.
+        </li>
+        <li><strong>Link an external JavaScript file</strong> that displays the current date and time in the console.
+        </li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>Interactive Web Page:</strong> Use JavaScript to validate form input and provide instant feedback to
+          the user.</li>
+      </ul>
+      <hr>
+      <h3 id="javascript-variables">JavaScript Variables</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li><strong>Variable Declaration:</strong>
+          <ul>
+            <li><code>var</code>: Function-scoped variable.</li>
+            <li><code>let</code>: Block-scoped variable.</li>
+            <li><code>const</code>: Block-scoped, read-only variable.</li>
+          </ul>
+        </li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code>
+          // Variable declarations
+          var oldVariable = &quot;Old&quot;; // Function scope
+          let newVariable = &quot;New&quot;; // Block scope
+          const constantVariable = &quot;Constant&quot;; // Block scope and read-only
+          
+          // Using variables
+          console.log(oldVariable);
+          console.log(newVariable);
+          console.log(constantVariable);
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Declare three variables</strong>: one using <code>var</code>, one using <code>let</code>, and one
+          using <code>const</code>. Print their values.</li>
+        <li><strong>Attempt to reassign</strong> a value to a <code>const</code> variable and observe the result.</li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>Dynamic Content Update:</strong> Use variables to store user input and update the content of a web
+          page based on that input.</li>
+      </ul>
+      <hr>
+      <h3 id="javascript-data-types">JavaScript Data Types</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li>
+          <p><strong>Primitive Data Types:</strong></p>
+          <ul>
+            <li><strong>String:</strong> Represents text. Example: <code>&quot;Hello&quot;</code></li>
+            <li><strong>Number:</strong> Represents numerical values. Example: <code>42</code></li>
+            <li><strong>Boolean:</strong> Represents true or false. Example: <code>true</code></li>
+            <li><strong>Undefined:</strong> Represents a variable that has not been assigned a value.</li>
+            <li><strong>Null:</strong> Represents the intentional absence of any value.</li>
+            <li><strong>Symbol:</strong> Represents a unique identifier.</li>
+            <li><strong>BigInt:</strong> Represents large integers.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Non-Primitive Data Types:</strong></p>
+          <ul>
+            <li><strong>Object:</strong> Represents a collection of key-value pairs.</li>
+            <li><strong>Array:</strong> Represents a list-like collection of values.</li>
+          </ul>
+        </li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code>
+          // Primitive data types
+          let name = &quot;Alice&quot;; // String
+          let age = 30; // Number
+          let isStudent = true; // Boolean
+          let address; // Undefined
+          let score = null; // Null
+          
+          // Non-primitive data types
+          let person = { name: &quot;Alice&quot;, age: 30 }; // Object
+          let numbers = [1, 2, 3, 4, 5]; // Array
+          
+          console.log(name, age, isStudent, address, score);
+          console.log(person);
+          console.log(numbers);
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Create variables</strong> of each data type and print their types using <code>typeof</code>.</li>
+        <li><strong>Build an object</strong> that represents a book with properties like title, author, and year.</li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>User Profile:</strong> Store user information such as name, age, and preferences in an object, and
+          update or display this information dynamically on a web page.</li>
+      </ul>
+      <hr>
+      <h3 id="javascript-arithmetic-operators">JavaScript Arithmetic Operators</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li><strong>Purpose:</strong> Perform arithmetic operations on numerical values.</li>
+      </ul>
+      <h4><strong>Operators:</strong></h4>
+      <ul>
+        <li><strong>Addition (<code>+</code>):</strong> Adds two numbers.</li>
+        <li><strong>Subtraction (<code>-</code>):</strong> Subtracts one number from another.</li>
+        <li><strong>Multiplication (<code>*</code>):</strong> Multiplies two numbers.</li>
+        <li><strong>Division (<code>/</code>):</strong> Divides one number by another.</li>
+        <li><strong>Modulus (<code>%</code>):</strong> Returns the remainder of a division.</li>
+        <li><strong>Exponentiation (<code>**</code>):</strong> Raises a number to the power of another.</li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code>
+          let a = 10;
+          let b = 5;
+          
+          console.log(a + b);  // Addition: 15
+          console.log(a - b);  // Subtraction: 5
+          console.log(a * b);  // Multiplication: 50
+          console.log(a / b);  // Division: 2
+          console.log(a % b);  // Modulus: 0
+          console.log(a ** b); // Exponentiation: 100000
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Create a script</strong> that calculates the area of a rectangle (length * width) and logs it to the
+          console.</li>
+        <li><strong>Write a function</strong> that takes two numbers and returns their average using arithmetic
+          operations.</li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>Expense Calculator:</strong> Create a calculator that computes the total cost of items purchased,
+          including taxes and discounts.</li>
+      </ul>
+      <hr>
+      <h3 id="javascript-assignment-operators">JavaScript Assignment Operators</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li><strong>Purpose:</strong> Assign values to variables and perform operations in a concise manner.</li>
+      </ul>
+      <h4><strong>Operators:</strong></h4>
+      <ul>
+        <li><strong>Assignment (<code>=</code>):</strong> Assigns a value to a variable.</li>
+        <li><strong>Addition Assignment (<code>+=</code>):</strong> Adds a value to a variable and assigns the result.
+        </li>
+        <li><strong>Subtraction Assignment (<code>-=</code>):</strong> Subtracts a value from a variable and assigns the
+          result.</li>
+        <li><strong>Multiplication Assignment (<code>*=</code>):</strong> Multiplies a variable by a value and assigns
+          the result.</li>
+        <li><strong>Division Assignment (<code>/=</code>):</strong> Divides a variable by a value and assigns the
+          result.</li>
+        <li><strong>Modulus Assignment (<code>%=</code>):</strong> Applies modulus operation and assigns the result.
+        </li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code>
+          let x = 10;
+          x += 5;  // Equivalent to x = x + 5, x is now 15
+          x -= 3;  // Equivalent to x = x - 3, x is now 12
+          x *= 2;  // Equivalent to x = x * 2, x is now 24
+          x /= 4;  // Equivalent to x = x / 4, x is now 6
+          x %= 5;  // Equivalent to x = x % 5, x is now 1
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Write a script</strong> that uses assignment operators to update the value of a variable
+          representing a bank account balance.</li>
+        <li><strong>Create a function</strong> that uses different assignment operators to calculate the final price of
+          a product after applying discounts and taxes.</li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>Budget Tracker:</strong> Build a simple budget tracker that updates and displays remaining balance
+          after adding expenses or income.</li>
+      </ul>
+      <hr>
+      <h3 id="javascript-functions">JavaScript Functions</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li><strong>Purpose:</strong> Encapsulate reusable blocks of code that perform specific tasks.</li>
+      </ul>
+      <h4><strong>Function Declaration:</strong></h4>
+      <ul>
+        <li><strong>Syntax:</strong></li>
+      </ul>
+      <pre><code>
+          function functionName(parameters) {
+            // Code to execute
+          }
+          </code></pre>
+      <ul>
+        <li><strong>Example:</strong></li>
+      </ul>
+      <pre><code>
+          function add(a, b) {
+            return a + b;
+          }
+          
+          console.log(add(5, 3)); // Outputs: 8
+          </code></pre>
+      <h4><strong>Function Expressions:</strong></h4>
+      <ul>
+        <li><strong>Syntax:</strong></li>
+      </ul>
+      <pre><code>
+          const multiply = function(x, y) {
+            return x * y;
+          };
+          
+          console.log(multiply(4, 6)); // Outputs: 24
+          </code></pre>
+      <h4><strong>Arrow Functions:</strong></h4>
+      <ul>
+        <li><strong>Syntax:</strong></li>
+      </ul>
+      <pre><code>
+          const divide = (a, b) =&gt; a / b;
+          
+          console.log(divide(12, 4)); // Outputs: 3
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Create a function</strong> that takes a name as a parameter and returns a greeting message.</li>
+        <li><strong>Write a function</strong> that calculates and returns the factorial of a number.</li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>Form Validation:</strong> Use functions to validate user input in a form, such as checking if an
+          email address is correctly formatted.</li>
+      </ul>
+      <hr>
+      <h3 id="javascript-conditional-statements">JavaScript Conditional Statements</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li><strong>Purpose:</strong> Execute different code based on conditions.</li>
+      </ul>
+      <h4><strong>Types of Conditional Statements:</strong></h4>
+      <ul>
+        <li>
+          <p><strong><code>if</code> Statement:</strong></p>
+          <ul>
+            <li><strong>Syntax:</strong></li>
+          </ul>
+          <pre><code>
+          if (condition) {
+            // Code to execute if condition is true
+          }
+          </code></pre>
+        </li>
+        <li>
+          <p><strong><code>if...else</code> Statement:</strong></p>
+          <ul>
+            <li><strong>Syntax:</strong></li>
+          </ul>
+          <pre><code>
+          if (condition) {
+            // Code to execute if condition is true
+          } else {
+            // Code to execute if condition is false
+          }
+          </code></pre>
+        </li>
+        <li>
+          <p><strong><code>else if</code> Statement:</strong></p>
+          <ul>
+            <li><strong>Syntax:</strong></li>
+          </ul>
+          <pre><code>
+          if (condition1) {
+            // Code to execute if condition1 is true
+          } else if (condition2) {
+            // Code to execute if condition2 is true
+          } else {
+            // Code to execute if none of the conditions are true
+          }
+          </code></pre>
+        </li>
+        <li>
+          <p><strong><code>switch</code> Statement:</strong></p>
+          <ul>
+            <li><strong>Syntax:</strong></li>
+          </ul>
+          <pre><code>
+          switch (expression) {
+            case value1:
+              // Code to execute if expression matches value1
+              break;
+            case value2:
+              // Code to execute if expression matches value2
+              break;
+            default:
+              // Code to execute if no case matches
+          }
+          </code></pre>
+        </li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code>
+          let day = 2;
+          
+          if (day === 1) {
+            console.log(&quot;Monday&quot;);
+          } else if (day === 2) {
+            console.log(&quot;Tuesday&quot;);
+          } else {
+            console.log(&quot;Other day&quot;);
+          }
+          
+          // Switch case example
+          let fruit = &quot;apple&quot;;
+          switch (fruit) {
+            case &quot;apple&quot;:
+              console.log(&quot;This is an apple.&quot;);
+              break;
+            case &quot;banana&quot;:
+              console.log(&quot;This is a banana.&quot;);
+              break;
+            default:
+              console.log(&quot;Unknown fruit.&quot;);
+          }
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Write a script</strong> that uses <code>if...else</code> statements to check if a number is
+          positive, negative, or zero.</li>
+        <li><strong>Create a function</strong> that uses a <code>switch</code> statement to return the name of the month
+          based on a number (1-12).</li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>User Role Access:</strong> Use conditional statements to manage access to different parts of a web
+          application based on user roles (e.g., admin, editor, viewer).</li>
+      </ul>
+      <hr>
+      <h3 id="javascript-loops">JavaScript Loops</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li><strong>Purpose:</strong> Repeat a block of code multiple times.</li>
+      </ul>
+      <h4><strong>Types of Loops:</strong></h4>
+      <ul>
+        <li>
+          <p><strong><code>for</code> Loop:</strong></p>
+          <ul>
+            <li><strong>Syntax:</strong></li>
+          </ul>
+          <pre><code>
+          for (initialization; condition; increment/decrement) {
+            // Code to execute
+          }
+          </code></pre>
+        </li>
+        <li>
+          <p><strong><code>while</code> Loop:</strong></p>
+          <ul>
+            <li><strong>Syntax:</strong></li>
+          </ul>
+          <pre><code>
+          while (condition) {
+            // Code to execute
+          }
+          </code></pre>
+        </li>
+        <li>
+          <p><strong><code>do...while</code> Loop:</strong></p>
+          <ul>
+            <li><strong>Syntax:</strong></li>
+          </ul>
+          <pre><code>
+          do {
+            // Code to execute
+          } while (condition);
+          </code></pre>
+        </li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code>
+          // For loop
+          for (let i = 0; i &lt; 5; i++) {
+            console.log(i); // Outputs numbers 0 through 4
+          }
+          
+          // While loop
+          let j = 0;
+          while (j &lt; 5) {
+            console.log(j); // Outputs numbers 0 through 4
+            j++;
+          }
+          
+          // Do...while loop
+          let k = 0;
+          do {
+            console.log(k); // Outputs numbers 0 through 4
+            k++;
+          } while (k &lt; 5);
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Write a <code>for</code> loop</strong> that prints the first 10 even numbers.</li>
+        <li><strong>Create a <code>while</code> loop</strong> that calculates the sum of numbers from 1 to 100.</li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>Data Processing:</strong> Use loops to iterate over and process items in a shopping cart, such as
+          calculating the total price of all items.</li>
+      </ul>
+      <hr>
+      <h3 id="javascript-comments">JavaScript Comments</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li><strong>Purpose:</strong> Provide explanations within the code to make it easier to understand and maintain.
+        </li>
+      </ul>
+      <h4><strong>Types of Comments:</strong></h4>
+      <ul>
+        <li><strong>Single-Line Comments:</strong> Use <code>//</code> for comments that occupy a single line.</li>
+        <li><strong>Multi-Line Comments:</strong> Use <code>/* ... */</code> for comments that span multiple lines.</li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code>
+          // This is a single-line comment
+          
+          /*
+            This is a multi-line comment
+            It can span multiple lines
+          */
+          
+          let x = 10; // Initialize x with 10
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Add comments</strong> to a piece of code to explain what each section does.</li>
+        <li><strong>Write a JavaScript function</strong> with comments explaining its purpose, parameters, and return
+          value.</li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>Code Documentation:</strong> Use comments to document complex logic in your code, making it easier
+          for other developers (or yourself) to understand and maintain it.</li>
+      </ul>
+      <hr>
+      <h3 id="javascript-objects">JavaScript Objects</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li><strong>Purpose:</strong> Store collections of key-value pairs where keys are strings and values can be any
+          data type.</li>
+      </ul>
+      <h4><strong>Key Concepts:</strong></h4>
+      <ul>
+        <li>
+          <p><strong>Creating Objects:</strong></p>
+          <ul>
+            <li><strong>Literal Notation:</strong></li>
+          </ul>
+          <pre><code>
+          let person = {
+            name: &quot;Alice&quot;,
+            age: 30,
+            greet: function() {
+              return &quot;Hello, &quot; + this.name;
+            }
+          };
+          </code></pre>
+        </li>
+        <li>
+          <p><strong>Accessing Object Properties:</strong></p>
+          <pre><code>
+          console.log(person.name); // Outputs: Alice
+          console.log(person[&quot;age&quot;]); // Outputs: 30
+          </code></pre>
+        </li>
+        <li>
+          <p><strong>Adding/Updating Properties:</strong></p>
+          <pre><code>
+          person.email = &quot;alice@example.com&quot;;
+          person.age = 31;
+          </code></pre>
+        </li>
+        <li>
+          <p><strong>Deleting Properties:</strong></p>
+          <pre><code>
+          delete person.email;
+          </code></pre>
+        </li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code>
+          let car = {
+            make: &quot;Toyota&quot;,
+            model: &quot;Corolla&quot;,
+            year: 2020,
+            start: function() {
+              return &quot;Car started&quot;;
+            }
+          };
+          
+          console.log(car.make); // Outputs: Toyota
+          console.log(car.start()); // Outputs: Car started
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Create an object</strong> that represents a book with properties for title, author, and publication
+          year. Add a method to display the book&#39;s details.</li>
+        <li><strong>Write a function</strong> that takes an object representing a student and returns a formatted string
+          with their name and grade.</li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>User Profile Management:</strong> Use objects to store and manage user profile information in a web
+          application, including their name, email, and preferences.</li>
+      </ul>
+      <hr>
+      <h3 id="javascript-strings">JavaScript Strings</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li><strong>Purpose:</strong> Represent and manipulate text data.</li>
+      </ul>
+      <h4><strong>Key Concepts:</strong></h4>
+      <ul>
+        <li>
+          <p><strong>String Creation:</strong></p>
+          <pre><code>
+          let str1 = &quot;Hello, World!&quot;;
+          let str2 = &#39;JavaScript is fun&#39;;
+          </code></pre>
+        </li>
+        <li>
+          <p><strong>String Concatenation:</strong></p>
+          <pre><code>
+          let greeting = &quot;Hello&quot;;
+          let name = &quot;Alice&quot;;
+          let message = greeting + &quot;, &quot; + name + &quot;!&quot;;
+          </code></pre>
+        </li>
+        <li>
+          <p><strong>String Methods:</strong></p>
+          <ul>
+            <li><strong>Length:</strong> <code>str.length</code></li>
+            <li><strong>Uppercase/Lowercase:</strong> <code>str.toUpperCase()</code>, <code>str.toLowerCase()</code>
+            </li>
+            <li><strong>Trim:</strong> <code>str.trim()</code></li>
+            <li><strong>Substring:</strong> <code>str.substring(start, end)</code></li>
+            <li><strong>Replace:</strong> <code>str.replace(search, replace)</code></li>
+          </ul>
+        </li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code>
+          let message = &quot;   JavaScript is awesome!   &quot;;
+          console.log(message.trim()); // Outputs: JavaScript is awesome!
+          console.log(message.toUpperCase()); // Outputs: JAVASCRIPT IS AWESOME!
+          console.log(message.substring(0, 10)); // Outputs: JavaScript
+          console.log(message.replace(&quot;awesome&quot;, &quot;fantastic&quot;)); // Outputs: JavaScript is fantastic!
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Write a script</strong> that takes a string and logs its length, uppercase version, and the first 5
+          characters.</li>
+        <li><strong>Create a function</strong> that replaces all occurrences of a word in a string with another word.
+        </li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>Text Formatting:</strong> Use string methods to format user input for consistent display, such as
+          capitalizing names or formatting addresses.</li>
+      </ul>
+      <hr>
+      <h3 id="javascript-arrays">JavaScript Arrays</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li><strong>Purpose:</strong> Store and manipulate collections of items, such as lists of values.</li>
+      </ul>
+      <h4><strong>Key Concepts:</strong></h4>
+      <ul>
+        <li>
+          <p><strong>Creating Arrays:</strong></p>
+          <pre><code>
+          let numbers = [1, 2, 3, 4, 5];
+          let names = [&quot;Alice&quot;, &quot;Bob&quot;, &quot;Charlie&quot;];
+          </code></pre>
+        </li>
+        <li>
+          <p><strong>Accessing Elements:</strong></p>
+          <pre><code>
+          console.log(numbers[0]); // Outputs: 1
+          console.log(names[1]); // Outputs: Bob
+          </code></pre>
+        </li>
+        <li>
+          <p><strong>Array Methods:</strong></p>
+          <ul>
+            <li><strong>Push:</strong> <code>arr.push(item)</code> – Adds an item to the end.</li>
+            <li><strong>Pop:</strong> <code>arr.pop()</code> – Removes the last item.</li>
+            <li><strong>Shift:</strong> <code>arr.shift()</code> – Removes the first item.</li>
+            <li><strong>Unshift:</strong> <code>arr.unshift(item)</code> – Adds an item to the beginning.</li>
+            <li><strong>Slice:</strong> <code>arr.slice(start, end)</code> – Returns a new array with a portion of the
+              original array.</li>
+            <li><strong>Splice:</strong> <code>arr.splice(start, deleteCount, item1, item2, ...)</code> – Adds/removes
+              items at a specific index.</li>
+          </ul>
+        </li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code>
+          let fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;];
+          fruits.push(&quot;date&quot;);
+          console.log(fruits); // Outputs: [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;, &quot;date&quot;]
+          
+          fruits.pop();
+          console.log(fruits); // Outputs: [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]
+          
+          let slicedFruits = fruits.slice(1, 3);
+          console.log(slicedFruits); // Outputs: [&quot;banana&quot;, &quot;cherry&quot;]
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Write a script</strong> that creates an array of numbers, adds a new number, and removes the first
+          number.</li>
+        <li><strong>Create a function</strong> that takes an array of strings and returns a new array with all strings
+          converted to uppercase.</li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>Todo List:</strong> Use arrays to manage a list of tasks, allowing users to add, remove, and view
+          their tasks.</li>
+      </ul>
+      <hr>
+      <h3 id="javascript-json">JavaScript JSON</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li><strong>Purpose:</strong> Exchange data between a server and a web application in a structured format.</li>
+      </ul>
+      <h4><strong>Key Concepts:</strong></h4>
+      <ul>
+        <li>
+          <p><strong>JSON Format:</strong></p>
+          <ul>
+            <li><strong>JSON (JavaScript Object Notation)</strong> is a lightweight data-interchange format that is easy
+              for humans to read and write and easy for machines to parse and generate.</li>
+            <li>Example:</li>
+          </ul>
+          <pre><code class="language-json">{
+            &quot;name&quot;: &quot;Alice&quot;,
+            &quot;age&quot;: 30,
+            &quot;email&quot;: &quot;alice@example.com&quot;
+          }
+          </code></pre>
+        </li>
+        <li>
+          <p><strong>Parsing JSON:</strong></p>
+          <pre><code>
+          let jsonString = &#39;{&quot;name&quot;: &quot;Alice&quot;, &quot;age&quot;: 30}&#39;;
+          let obj = JSON.parse(jsonString);
+          console.log(obj.name); // Outputs: Alice
+          </code></pre>
+        </li>
+        <li>
+          <p><strong>Stringifying JSON:</strong></p>
+          <pre><code>
+          let user = { name: &quot;Alice&quot;, age: 30 };
+          let jsonString = JSON.stringify(user);
+          console.log(jsonString); // Outputs: {&quot;name&quot;:&quot;Alice&quot;,&quot;age&quot;:30}
+          </code></pre>
+        </li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code>
+          let jsonData = &#39;{&quot;name&quot;: &quot;Bob&quot;, &quot;age&quot;: 25}&#39;;
+          let dataObject = JSON.parse(jsonData);
+          
+          console.log(dataObject.name); // Outputs: Bob
+          
+          let newUser = { name: &quot;Charlie&quot;, age: 35 };
+          let jsonOutput = JSON.stringify(newUser);
+          
+          console.log(jsonOutput); // Outputs: {&quot;name&quot;:&quot;Charlie&quot;,&quot;age&quot;:35}
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Parse a JSON string</strong> representing a list of products and log each product&#39;s name.</li>
+        <li><strong>Convert a JavaScript object</strong> with user details into a JSON string and log it.</li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>API Data Handling:</strong> Use JSON to fetch and process data from a web API, such as retrieving
+          user information or updating settings.</li>
+      </ul>
+      <hr>
+      <h3 id="javascript-debugging">JavaScript Debugging</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li><strong>Purpose:</strong> Identify and fix errors or issues in JavaScript code to ensure it runs correctly.
+        </li>
+      </ul>
+      <h4><strong>Key Techniques:</strong></h4>
+      <ul>
+        <li>
+          <p><strong>Using <code>console.log</code>:</strong> Print messages to the console to check variable values and
+            program flow.</p>
+          <pre><code>
+          let x = 10;
+          console.log(x); // Outputs: 10
+          </code></pre>
+        </li>
+        <li>
+          <p><strong>Breakpoints:</strong> Set breakpoints in browser developer tools to pause execution and inspect
+            code.</p>
+        </li>
+        <li>
+          <p><strong>Debugger Statement:</strong></p>
+          <pre><code>
+          function test() {
+            debugger; // Code execution will pause here
+            console.log(&quot;Testing...&quot;);
+          }
+          test();
+          </code></pre>
+        </li>
+        <li>
+          <p><strong>Error Handling:</strong> Use <code>try...catch</code> blocks to manage runtime errors.</p>
+          <pre><code>
+          try {
+            let result = riskyFunction();
+          } catch (error) {
+            console.error(&quot;An error occurred:&quot;, error);
+          }
+          </code></pre>
+        </li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code>
+          function divide(a, b) {
+            if (b === 0) {
+              console.error(&quot;Cannot divide by zero.&quot;);
+              return;
+            }
+            return a / b;
+          }
+          
+          console.log(divide(10, 2)); // Outputs: 5
+          console.log(divide(10, 0)); // Outputs: Cannot divide by zero.
+          </code></pre>
+      <h4></h4>
+      <hr>
+      <h3 id="javascript-integration-with-html-pages">JavaScript Integration with HTML Pages</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li><strong>Purpose:</strong> Embed JavaScript code within HTML to enhance web page functionality.</li>
+      </ul>
+      <h4><strong>Key Concepts:</strong></h4>
+      <ul>
+        <li>
+          <p><strong>Inline JavaScript:</strong></p>
+          <ul>
+            <li>Directly within HTML elements using the <code>onclick</code>, <code>onchange</code>, or other event
+              attributes.</li>
+          </ul>
+          <pre><code class="language-html">&lt;button onclick=&quot;alert(&#39;Hello World!&#39;)&quot;&gt;Click Me&lt;/button&gt;
+          </code></pre>
+        </li>
+        <li>
+          <p><strong>Internal JavaScript:</strong></p>
+          <ul>
+            <li>Within a <code>&lt;script&gt;</code> tag inside the HTML document.</li>
+          </ul>
+          <pre><code class="language-html">&lt;script&gt;
+            function greet() {
+              alert(&quot;Hello from internal script!&quot;);
+            }
+          &lt;/script&gt;
+          &lt;button onclick=&quot;greet()&quot;&gt;Click Me&lt;/button&gt;
+          </code></pre>
+        </li>
+        <li>
+          <p><strong>External JavaScript:</strong></p>
+          <ul>
+            <li>Linking to an external <code>.js</code> file using the <code>&lt;script&gt;</code> tag with a
+              <code>src</code> attribute.
+            </li>
+          </ul>
+          <pre><code class="language-html">&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+          </code></pre>
+        </li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+          &lt;html lang=&quot;en&quot;&gt;
+          &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;title&gt;JavaScript Integration&lt;/title&gt;
+            &lt;script src=&quot;app.js&quot;&gt;&lt;/script&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;button onclick=&quot;showMessage()&quot;&gt;Click Me&lt;/button&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+          </code></pre>
+      <pre><code>
+          // app.js
+          function showMessage() {
+            alert(&quot;Hello from external script!&quot;);
+          }
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Create an HTML page</strong> that uses both internal and external JavaScript to display messages and
+          perform actions.</li>
+        <li><strong>Write a script</strong> that dynamically changes the content of a webpage based on user interaction.
+        </li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>Interactive Forms:</strong> Use JavaScript to validate form inputs and provide immediate feedback to
+          users.</li>
+      </ul>
+      <hr>
+      <h3 id="html-dom-introduction">HTML DOM Introduction</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li><strong>Purpose:</strong> Interact with and manipulate the structure and content of a web page using
+          JavaScript.</li>
+      </ul>
+      <h4><strong>Key Concepts:</strong></h4>
+      <ul>
+        <li><strong>DOM (Document Object Model):</strong> Represents the page structure as a tree of nodes.</li>
+        <li><strong>Accessing Elements:</strong>
+          <ul>
+            <li><code>getElementById()</code>, <code>getElementsByClassName()</code>,
+              <code>getElementsByTagName()</code>
+            </li>
+            <li><code>querySelector()</code>, <code>querySelectorAll()</code></li>
+          </ul>
+        </li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+          &lt;html lang=&quot;en&quot;&gt;
+          &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;title&gt;DOM Example&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1 id=&quot;header&quot;&gt;Hello, World!&lt;/h1&gt;
+            &lt;script&gt;
+              // Access element by ID
+              let header = document.getElementById(&#39;header&#39;);
+              header.textContent = &quot;Hello, DOM!&quot;;
+            &lt;/script&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Modify the content</strong> of an HTML element using JavaScript based on user interaction.</li>
+        <li><strong>Create a script</strong> that changes the style of an element when a button is clicked.</li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>Dynamic Content Updates:</strong> Use DOM manipulation to update content in real-time based on user
+          actions, such as updating a profile or news feed.</li>
+      </ul>
+      <hr>
+      <h3 id="javascript-reading-the-html">JavaScript Reading the HTML</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li><strong>Purpose:</strong> Extract and use data from the HTML content using JavaScript.</li>
+      </ul>
+      <h4><strong>Key Concepts:</strong></h4>
+      <ul>
+        <li><strong>Reading Element Content:</strong>
+          <ul>
+            <li><code>textContent</code>, <code>innerHTML</code>, <code>innerText</code></li>
+          </ul>
+        </li>
+        <li><strong>Reading Attributes:</strong>
+          <ul>
+            <li><code>getAttribute()</code></li>
+          </ul>
+        </li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+          &lt;html lang=&quot;en&quot;&gt;
+          &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;title&gt;Read HTML&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;p id=&quot;description&quot; data-info=&quot;Additional Info&quot;&gt;This is a paragraph.&lt;/p&gt;
+            &lt;script&gt;
+              let paragraph = document.getElementById(&#39;description&#39;);
+              console.log(paragraph.textContent); // Outputs: This is a paragraph.
+              console.log(paragraph.getAttribute(&#39;data-info&#39;)); // Outputs: Additional Info
+            &lt;/script&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Write a script</strong> to read and log the content and attributes of various HTML elements.</li>
+        <li><strong>Create a function</strong> that extracts and displays information from an HTML element based on user
+          interaction.</li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>Content Extraction:</strong> Use JavaScript to read data from elements on a page and use it to
+          populate or modify other parts of the web application.</li>
+      </ul>
+      <hr>
+      <h3 id="javascript-updating-the-html">JavaScript Updating the HTML</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li><strong>Purpose:</strong> Change the content and structure of HTML elements dynamically using JavaScript.
+        </li>
+      </ul>
+      <h4><strong>Key Concepts:</strong></h4>
+      <ul>
+        <li><strong>Updating Content:</strong>
+          <ul>
+            <li><code>textContent</code>, <code>innerHTML</code></li>
+          </ul>
+        </li>
+        <li><strong>Updating Attributes:</strong>
+          <ul>
+            <li><code>setAttribute()</code></li>
+          </ul>
+        </li>
+        <li><strong>Creating and Inserting Elements:</strong>
+          <ul>
+            <li><code>createElement()</code>, <code>appendChild()</code>, <code>insertBefore()</code></li>
+          </ul>
+        </li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+          &lt;html lang=&quot;en&quot;&gt;
+          &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;title&gt;Update HTML&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;div id=&quot;container&quot;&gt;&lt;/div&gt;
+            &lt;script&gt;
+              let container = document.getElementById(&#39;container&#39;);
+              container.textContent = &quot;New content added dynamically.&quot;;
+              
+              let newElement = document.createElement(&#39;p&#39;);
+              newElement.textContent = &quot;This is a new paragraph.&quot;;
+              container.appendChild(newElement);
+            &lt;/script&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Create a script</strong> that updates the content and attributes of HTML elements based on user
+          input.</li>
+        <li><strong>Write a function</strong> that dynamically adds new elements to a webpage, such as a list of items.
+        </li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>Dynamic User Interfaces:</strong> Use JavaScript to update user interfaces in response to user
+          actions or external data, such as updating a chat interface or live data feed.</li>
+      </ul>
+      <hr>
+      <h3 id="javascript-reading-the-css">JavaScript Reading the CSS</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li><strong>Purpose:</strong> Access and read CSS properties applied to HTML elements.</li>
+      </ul>
+      <h4><strong>Key Concepts:</strong></h4>
+      <ul>
+        <li><strong>Reading Computed Styles:</strong>
+          <ul>
+            <li><code>getComputedStyle()</code></li>
+          </ul>
+        </li>
+        <li><strong>Accessing Specific Properties:</strong>
+          <ul>
+            <li><code>style.propertyName</code> for inline styles</li>
+          </ul>
+        </li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+          &lt;html lang=&quot;en&quot;&gt;
+          &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;title&gt;Read CSS&lt;/title&gt;
+            &lt;style&gt;
+              #box {
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+              }
+            &lt;/style&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;div id=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;script&gt;
+              let box = document.getElementById(&#39;box&#39;);
+              let styles = getComputedStyle(box);
+              console.log(styles.width); // Outputs: 100px
+              console.log(styles.backgroundColor); // Outputs: rgb(0, 0, 255)
+            &lt;/script&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Write a script</strong> to read and log the computed styles of various HTML elements.</li>
+        <li><strong>Create a function</strong> that checks and reports whether an element has a certain style applied.
+        </li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>Style Analysis:</strong> Use JavaScript to analyze and report styles applied to elements, which can
+          be useful for debugging or dynamic style adjustments.</li>
+      </ul>
+      <hr>
+      <h3 id="javascript-updating-the-css">JavaScript Updating the CSS</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li><strong>Purpose:</strong> Modify CSS properties of HTML elements dynamically using JavaScript.</li>
+      </ul>
+      <h4><strong>Key Concepts:</strong></h4>
+      <ul>
+        <li><strong>Inline Styles:</strong>
+          <ul>
+            <li>Directly update the <code>style</code> property of an element.</li>
+          </ul>
+        </li>
+        <li><strong>Class Manipulation:</strong>
+          <ul>
+            <li>Add or remove CSS classes using <code>classList</code> methods.</li>
+          </ul>
+        </li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+          &lt;html lang=&quot;en&quot;&gt;
+          &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;title&gt;Update CSS&lt;/title&gt;
+            &lt;style&gt;
+              #box {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+              }
+              .blue-background {
+                background-color: blue;
+              }
+            &lt;/style&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;div id=&quot;box&quot;&gt;&lt;/div&gt;
+            &lt;button onclick=&quot;changeStyle()&quot;&gt;Change Style&lt;/button&gt;
+            &lt;script&gt;
+              function changeStyle() {
+                let box = document.getElementById(&#39;box&#39;);
+                box.style.width = &#39;200px&#39;;
+                box.style.height = &#39;200px&#39;;
+                box.classList.add(&#39;blue-background&#39;);
+              }
+            &lt;/script&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Create a script</strong> that updates the background color and dimensions of an HTML element based
+          on user input.</li>
+        <li><strong>Write a function</strong> that toggles a CSS class on an element to apply different styles.</li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>Interactive Design:</strong> Use JavaScript to apply different styles in response to user
+          interactions, such as changing themes or layouts.</li>
+      </ul>
+      <hr>
+      <h3 id="javascript-events">JavaScript Events</h3>
+      <h4><strong>Overview:</strong></h4>
+      <ul>
+        <li><strong>Purpose:</strong> Handle and respond to user interactions or other events that occur in the browser.
+        </li>
+      </ul>
+      <h4><strong>Key Concepts:</strong></h4>
+      <ul>
+        <li>
+          <p><strong>Event Types:</strong></p>
+          <ul>
+            <li><strong>Mouse Events:</strong> <code>click</code>, <code>mouseover</code>, <code>mouseout</code></li>
+            <li><strong>Keyboard Events:</strong> <code>keydown</code>, <code>keyup</code></li>
+            <li><strong>Form Events:</strong> <code>submit</code>, <code>change</code></li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Event Handling:</strong></p>
+          <ul>
+            <li><strong>Event Listeners:</strong> <code>addEventListener()</code></li>
+            <li><strong>Inline Event Handlers:</strong> Using attributes like <code>onclick</code></li>
+          </ul>
+        </li>
+      </ul>
+      <h4><strong>Examples:</strong></h4>
+      <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+          &lt;html lang=&quot;en&quot;&gt;
+          &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;title&gt;JavaScript Events&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;button id=&quot;myButton&quot;&gt;Click Me&lt;/button&gt;
+            &lt;script&gt;
+              let button = document.getElementById(&#39;myButton&#39;);
+              button.addEventListener(&#39;click&#39;, function() {
+                alert(&#39;Button was clicked!&#39;);
+              });
+            &lt;/script&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+          </code></pre>
+      <h4><strong>Exercises:</strong></h4>
+      <ol>
+        <li><strong>Write a script</strong> that handles a form submission event to prevent the default action and
+          display a message instead.</li>
+        <li><strong>Create a function</strong> that responds to keyboard events by logging the key pressed.</li>
+      </ol>
+      <h4><strong>Real-World Scenario:</strong></h4>
+      <ul>
+        <li><strong>User Interaction:</strong> Use JavaScript to handle various user interactions on a webpage, such as
+          form submissions, button clicks, or keyboard inputs.</li>
+      </ul>
+
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <hr>
+    <nav>
+      <a href="/">Home</a> &nbsp;
+      <a href="philosophy-content.html">Philosophy</a> &nbsp;
+      <a href="software-development-content.html">Software</a> &nbsp;
+      <a href="terms.html">Terms</a> &nbsp;
+      <a href="privacy.html">Privacy</a> &nbsp;
+      <a href="cookie-policy.html">Cookies</a> &nbsp;
+      <a href="disclaimer.html">Disclaimer</a> &nbsp;
+    </nav>
+    <p>Copyright &copy; 2024 M. V. Prasad. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
