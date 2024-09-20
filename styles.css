@@ -31,14 +31,6 @@ footer {
     margin-top: 50px;
 }
 
-#icon {
-    display: none;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    cursor: pointer;
-    z-index: 1000;
-}
 
 pre {
     background-color: #f6f6f6;
