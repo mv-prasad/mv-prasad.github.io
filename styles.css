@@ -1,10 +1,12 @@
 body {
+    background-color: #f6f6f6;
+    color: #262626;
     font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     line-height: 1.6;
 }
 
-header h1 {
-    font-family: serif;
+header h1, h2 {
+    font-size: medium;
 }
 
 header p {
@@ -16,7 +18,7 @@ main,
 footer,
 header {
     margin: auto;
-    max-width: 750px;
+    max-width: 550px;
     padding: 0 20px;
 }
 
